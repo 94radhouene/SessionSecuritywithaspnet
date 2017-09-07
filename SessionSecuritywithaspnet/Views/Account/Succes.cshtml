@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+@using SessionSecuritywithaspnet.Security;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Succes</title>
+</head>
+<body>
+    <div>
+        <p>Hello</p>
+@SessionPersister.username
+        <br />
+        <a href="@Url.Action("Logout","Account")">content</a>
+    </div>
+</body>
+</html>
